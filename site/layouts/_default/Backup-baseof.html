@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="ru" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-
-{{ partial "head" . }}
-
-	<body class="sans-serif">
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  {{ partial "head" . }}
+  <body class="sans-serif">
 
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
 
@@ -15,6 +13,5 @@
     {{ with $script.js }}
       <script src="{{ relURL . }}"></script>
     {{ end }}
-
-	</body>
+  </body>
 </html>
