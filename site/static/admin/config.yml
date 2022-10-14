@@ -28,7 +28,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "item"
     label: "Item"
-    folder: "site/item"
+    folder: "site/content"
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
